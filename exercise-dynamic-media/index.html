@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML5</title>
+</head>
+<body>
+  <h1>Imagens Dinâmicas</h1>
+  <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+  <picture>
+    <source media="(max-width: 750px)" srcset="images/photo-s.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="images/photo-m.png" type="image/png">
+    <img src="images/photo-l.png" alt="imagem flexível">
+  </picture>
+
+  <h1>Reproduzindo aúdio</h1>
+  <p>Vamos aprender a reproduzir aúdios em HTML5.</p>
+
+  
+  <ul>
+    <li>
+      <p>Gully Dreams by Hanu Dixit</p>
+      <audio preload="metadata" controls>
+        <source src="midia/gully_dreams_hanu_dixit.mp3" type="audio/mpeg">
+        <source src="midia/gully_dreams_ogg.ogg" type="audio/ogg">
+        <source src="midia/gully_dreams_wav.wav" type="audio/wav"><!-- NÃO INDICADO, ARQUIVO MUITO PESADO -->
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midia/gully_dreams_hanu_dixit.mp3">Clique aqui para baixar o arquivo MP3</a></p><!-- Caso o navegador não carregue esses formatos de aúdios, o que é muito difícil -->
+      </audio>
+    </li>
+    <li>
+      <p>Rain Fuse by French Fuse</p>
+      <audio src="midia/rain_fuse _french_fuse.mp3" preload="metadata" controls></audio>
+    </li>
+    <li>
+      <p>The Last Goodbye by Telecasted</p>
+      <audio src="midia/the_last_goodbye_telecasted.mp3" preload="metadata" controls></audio>
+    </li>
+  </ul>
+
+</body>
+</html>
