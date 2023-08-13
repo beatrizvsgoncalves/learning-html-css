@@ -3,7 +3,7 @@
 
 Estou a aprendendo a criar sites!
 
-Neste repositório aprendi: 
+Neste repositório contém algumas coisas que aprendi no Curso em Vídeo como: 
 usar o GIMP, uma ferramenta de edição de imagens; 
 fazer links; 
 fazer mídia dinâmica com vários formatos; 
