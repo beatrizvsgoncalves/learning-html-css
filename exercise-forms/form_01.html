@@ -12,12 +12,18 @@
 	</head>
 	<body>
 		<h1>Meu primeiro formulário</h1>
-		<form action="cadastro.js" autocomplete="off">
-			<label for="idnone">Nome: </label>
-			<input type="text" name="nome" id="idnome" />
-			<label for="idsobrenome">Sobrenome: </label>
-			<input type="text" name="sobrenome" id="idsobrenome" />
-			<input type="submit" value="Enviar" />
+		<form action="./cadastro.php" method="post" autocomplete="off">
+			<p>
+				<label for="idnone">Nome: </label>
+				<input type="text" name="nome" id="idnome" required/>
+			</p>
+			<p>
+				<label for="idsobrenome">Sobrenome: </label>
+				<input type="text" name="sobrenome" id="idsobrenome" required/>
+			</p>
+			<p>
+				<input type="submit" value="Enviar" />
+			</p>
 		</form>
 	</body>
 </html>
