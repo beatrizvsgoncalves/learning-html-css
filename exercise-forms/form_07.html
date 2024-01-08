@@ -21,7 +21,7 @@
         <div>
             <label for="iest">Estado:</label>
             <select name="estado" id="iest">
-                <option value="Estado"></option>
+                <option value="Estado" disabled selected>---</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -52,6 +52,110 @@
             </select>
         </div>
 
+        <div>
+            <label for="ifilmemarvel">Filme da Marvel: </label>
+            <select name="filmes" id="ifilmemarvel">
+                <optgroup label="Capitão América">
+                    <option value="cap">Capitão América: O Primeiro Vingador</option>
+                    <option value="cap">Capitão América: Soldado Invernal</option>
+                    <option value="cap">Capitão América: Guerra Civil</option>
+                </optgroup>
+
+                <optgroup label="Capitã Marvel">
+                    <option value="marvel">Capitã Marvel</option>
+                    <option value="marvel">As Marvels</option>
+                </optgroup>
+
+                <optgroup label="Doutor Estranho">
+                    <option value="dr">Doutor Estranho</option>
+                    <option value="dr">Doutor Estranho no Multiverso da Loucura</option>
+                </optgroup>
+
+                <optgroup label="Eternos">
+                    <option value="eternos">Eternos</option>
+                </optgroup>
+
+                <optgroup label="Guardiões da Galáxia">
+                    <option value="gotg">Guardiões da Galáxia Vol.1</option>
+                    <option value="gotg">Guardiões da Galáxia Vol.2</option>
+                    <option value="gotg">Guardiões da Galáxia Vol.3</option>
+                </optgroup>
+
+                <optgroup label="Homem de Ferro">
+                    <option value="iron">Homem de Ferro</option>
+                    <option value="iron">Homem de Ferro 2</option>
+                    <option value="iron">Homem de Ferro 3</option>
+                </optgroup>
+
+                <optgroup label="Homem-Aranha">
+                    <option value="aranha">Homem-Aranha: De Volta Ao Lar</option>
+                    <option value="aranha">Homem-Aranha: Longe de Casa</option>
+                    <option value="aranha">Homem-Aranha: Sem Volta para Casa</option>
+                </optgroup>
+
+                <optgroup label="Homem-Formiga">
+                    <option value="formiga">Homem-Formiga</option>
+                    <option value="formiga">Homem-Formiga e a Vespa</option>
+                    <option value="formiga">Homem-Formiga e a Vespa: Quantumania</option>
+                </optgroup>
+                
+                <optgroup label="Hulk">
+                    <option value="hulk">Hulk</option>
+                    <option value="hulk">O Incrível Hulk</option>
+                </optgroup>
+
+                <optgroup label="Pantera Negra">
+                    <option value="pantera">Pantera Negra</option>
+                    <option value="pantera">Pantera Negra: Wakanda Para Sempre</option>
+                </optgroup>
+
+                <optgroup label="Shang-Chi">
+                    <option value="shang">Shang-Chi e a Lenda dos Dez Anéis</option>
+
+                </optgroup>
+
+                <optgroup label="Thor">
+                    <option value="thor">Thor</option>
+                    <option value="thor">Thor: O Mundo Sombrio</option>
+                    <option value="thor">Thor: Ragnarok</option>
+                    <option value="thor">Thor: Amor e Trovão</option>
+                </optgroup>
+
+                <optgroup label="Vingadores">
+                    <option value="vingadores"> Os Vingadores</option>
+                    <option value="vingadores">Vingadores: Era de Ultron</option>
+                    <option value="vingadores" selected>Vingadores: Guerra Infinita</option>
+                    <option value="vingadores">Vingadores: Ultimato</option>
+                </optgroup>
+
+                <optgroup label="Viúva Negra">
+                    <option value="viuva">Viúva Negra</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Profissões</label>
+            <input type="text" name="prof" id="iprof" list="lprof">
+            <datalist id="lprof">
+                <option value="Advogado"></option>
+                <option value="Administrador"></option>
+                <option value="Bombeiro"></option>
+                <option value="Comerciante"></option>
+                <option value="Contador"></option>
+                <option value="Desenvolvedor"></option>
+                <option value="Empresário"></option>
+                <option value="Policial"></option>
+                <option value="Médico"></option>
+                <option value="Professor"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imsg">Mensagem: </label>
+            <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+        </div>
 
         <div>
             <input type="reset" value="Limpar">
