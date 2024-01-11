@@ -9,7 +9,16 @@
 }
 
 html, body {
+    background-color: #233EFF;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 100vh;
     width: 100vw;
+}
+
+h1 {
+    color: #fff;
+    padding: .7rem;
+    text-shadow: 2px 2px 2px #13218d;
 }
 
