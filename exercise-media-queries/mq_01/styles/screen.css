@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgba(95, 158, 160, 0.753);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 8rem;
+}
+
+header > h1 {
+    color: whitesmoke;
+    font-size: 2.2em;
+    margin: 2rem 1.7rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+menu {
+    max-width: 30rem;
+    margin: auto 0 .5rem auto;
+    margin-right: 1rem;
+}
+
+menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    list-style: none;
+}
+
+menu ul li {
+    font-size: 1em;
+    font-variant: small-caps;
+}
+
+menu ul li:hover {
+    color: #00000090;
+    cursor: pointer;
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+article {
+    display: block;
+    max-width: 37rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+article > h2 {
+    margin-bottom: 1rem;
+}
