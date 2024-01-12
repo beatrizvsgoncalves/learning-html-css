@@ -2,3 +2,81 @@
 
 /* Todas as demais mídias */
 
+/* 
+
+- 320px — 480px: Mobile devices
+- 481px — 768px: iPads, Tablets
+- 769px — 1024px: Small screens, laptops
+- 1025px — 1200px: Desktops, large screens
+- 1201px and more — Extra large screens, TV 
+
+*/
+
+@media print {
+    body {
+        background-image: url("../images/back-print.jpg"); /* Desnecessário pq não dá para imprimir backgrounds*/
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90%;
+    }
+
+    h1, h2 {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+    }
+
+    h2::after {
+        content: "impressão";
+    }
+
+    img#phone { display: none; }
+    img#print { display: block; }
+}
+
+@media screen and (max-width: 410px) {
+    main {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    h2::after {
+        content: "iPads e tablets";
+    }
+
+    body {
+        background-image: url("../images/back-tablet.jpg");
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1399px) {
+    h2::after {
+        content: "desktop";
+    }
+
+    body {
+        background-image: url("../images/back-pc.jpg");
+    }
+
+    img#phone { display: none; }
+    img#pc { display: block; }
+}
+
+@media screen and (min-width: 1400px) {
+    h2::after {
+        content: "telas grandes";
+    }
+
+    body {
+        background-image: url("../images/back-tv.jpg");
+    }
+
+    img#phone { display: none; }
+    img#tv { display: block; }
+}
