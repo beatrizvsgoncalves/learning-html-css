@@ -11,13 +11,13 @@
 		<link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/media-query.css">
 	</head>
-	<body>
+	<body onresize="mudouTamanho()">
 		<header>
 			<h1>Meu Site</h1>
 			<span
 				id="icon"
 				class="material-icons"
-				onclick="clickMenu(), corIcone()"
+				onclick="clickMenu(), mudarCor()"
 				>menu</span
 			>
 			<nav id="menu">
@@ -67,16 +67,6 @@
 		</main>
 
 		<script>
-            function corIcone() {
-                if (menu.style.display == 'block') {
-                    icon.style.backgroundColor = 'whitesmoke';
-                    icon.style.color = 'black'
-                } else {
-                    icon.style.backgroundColor = '#383838';
-                    icon.style.color = 'white'
-                }
-            }
-
 			function clickMenu() {
 			    if (menu.style.display == 'block') {
 			        menu.style.display = 'none'
@@ -84,6 +74,26 @@
 			        menu.style.display = 'block'
 			    }
 			}
+
+            function mudouTamanho() {
+                if (window.innerWidth >= 768) {
+                    menu.style.display = 'block'
+                } else {
+                    menu.style.display = 'none';
+                    icon.style.backgroundColor = '#383838';
+                    icon.style.color = 'white'
+                }
+            }
+
+            function mudarCor() {
+                if (menu.style.display == 'none') {
+                    icon.style.backgroundColor = '#383838';
+                    icon.style.color = 'white'
+                } else {
+                    icon.style.backgroundColor = 'whitesmoke';
+                    icon.style.color = 'black'
+                }
+            }
 		</script>
 	</body>
 </html>
