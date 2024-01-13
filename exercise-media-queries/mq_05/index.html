@@ -1,48 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./estilos/style.css">
-</head>
-<body>
-    <header>
-        <h1>Meu Site</h1>
-        <span id="icon-burguer" class="material-icons" onclick="clickMenu()">menu</span>
-        <nav id="menu">
-            <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, expedita, delectus amet ullam repellat adipisci placeat quo nobis, reprehenderit facilis possimus eos quos. Est, eaque. Aperiam hic et veniam ipsum.
-            Id necessitatibus, cupiditate pariatur veniam impedit blanditiis, nostrum eius, error eligendi maxime in repudiandae nihil! Suscipit, possimus iste deleniti enim repellat ad dolor recusandae vitae modi fugiat dolorum iusto. Fugit.</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Media Query</title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./estilos/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Meu Site</h1>
+			<span
+				id="icon"
+				class="material-icons"
+				onclick="clickMenu(), corIcone()"
+				>menu</span
+			>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">Opção 1</a></li>
+					<li><a href="#">Opção 2</a></li>
+					<li><a href="#">Opção 3</a></li>
+					<li><a href="#">Opção 4</a></li>
+					<li><a href="#">Opção 5</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<h2>Testando Media Queries</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+					expedita, delectus amet ullam repellat adipisci placeat quo nobis,
+					reprehenderit facilis possimus eos quos. Est, eaque. Aperiam hic et
+					veniam ipsum. Id necessitatibus, cupiditate pariatur veniam impedit
+					blanditiis, nostrum eius, error eligendi maxime in repudiandae nihil!
+					Suscipit, possimus iste deleniti enim repellat ad dolor recusandae
+					vitae modi fugiat dolorum iusto. Fugit.
+				</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore harum illum atque, asperiores possimus eligendi, laudantium amet quasi quidem, sunt suscipit. Expedita quaerat est distinctio voluptas accusamus commodi fugit.</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore
+					harum illum atque, asperiores possimus eligendi, laudantium amet quasi
+					quidem, sunt suscipit. Expedita quaerat est distinctio voluptas
+					accusamus commodi fugit.
+				</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus maiores similique sit nisi consequatur laudantium vel explicabo quibusdam fuga molestiae illum, corrupti perspiciatis quae soluta velit officiis quod maxime?
-            Et nobis voluptates aliquam tenetur tempore sit quam alias obcaecati, quidem, quia molestias? Molestiae voluptatibus dicta consequuntur consequatur laboriosam praesentium neque cum adipisci doloribus, sed facilis deleniti velit aspernatur quo.
-            Voluptate fugit id beatae ut iste consectetur vitae earum dicta autem, eius distinctio temporibus eveniet nesciunt aliquid repellat iure cumque adipisci at obcaecati maxime odit numquam! Aliquam facere neque laudantium.</p>
-        </article>
-    </main>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
+					maiores similique sit nisi consequatur laudantium vel explicabo
+					quibusdam fuga molestiae illum, corrupti perspiciatis quae soluta
+					velit officiis quod maxime? Et nobis voluptates aliquam tenetur
+					tempore sit quam alias obcaecati, quidem, quia molestias? Molestiae
+					voluptatibus dicta consequuntur consequatur laboriosam praesentium
+					neque cum adipisci doloribus, sed facilis deleniti velit aspernatur
+					quo. Voluptate fugit id beatae ut iste consectetur vitae earum dicta
+					autem, eius distinctio temporibus eveniet nesciunt aliquid repellat
+					iure cumque adipisci at obcaecati maxime odit numquam! Aliquam facere
+					neque laudantium.
+				</p>
+			</article>
+		</main>
 
-    <script>
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
+		<script>
+            function corIcone() {
+                if (menu.style.display == 'block') {
+                    icon.style.backgroundColor = 'whitesmoke';
+                    icon.style.color = 'black'
+                } else {
+                    icon.style.backgroundColor = '#383838';
+                    icon.style.color = 'white'
+                }
             }
-        }
-    </script>
-</body>
+
+			function clickMenu() {
+			    if (menu.style.display == 'block') {
+			        menu.style.display = 'none'
+			    } else {
+			        menu.style.display = 'block'
+			    }
+			}
+		</script>
+	</body>
 </html>

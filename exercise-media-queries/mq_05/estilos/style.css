@@ -19,25 +19,13 @@ header > h1 {
     padding: .6rem;
 } 
 
-#icon-burguer {
+#icon {
     background-color: rgb(56, 56, 56);
     color: white;
     display: block;
     padding: .6rem;
+    user-select: none;
 }
-
-#icon-burguer:active {
-    background-color: whitesmoke;
-    color: black;
-
-}
-
-/* #icon-burguer:hover {
-    background-color: whitesmoke;
-    color: black;
-    cursor: pointer;
-}
- */
 
 nav {
     display: none;
