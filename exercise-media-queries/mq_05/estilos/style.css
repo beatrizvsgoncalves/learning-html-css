@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-bofy, html {
+body, html {
     background-color: lightgray;
 }
 
@@ -25,6 +25,7 @@ header > h1 {
     display: block;
     padding: .6rem;
     user-select: none;
+    width: 100%;
 }
 
 nav {
@@ -54,10 +55,11 @@ main {
     margin: auto;
     margin-top: .7rem;
     padding: .7rem;
-    width: 90vw;
+    width: 85%;
 }
 
 article > h2 {
+    font-size: 1.2em;
     padding-bottom: 1rem;
 }
 
