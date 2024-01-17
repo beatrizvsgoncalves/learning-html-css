@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 350px) {
+    #login {
+        border-radius: 0;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    #imagem {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    #login {
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+    
+    #imagem {
+        border-radius: 0;
+    }
+    
+    #formulario {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(0deg, rgb(248, 199, 94) 0%, rgb(105, 170, 255) 50%) no-repeat;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: row-reverse;
+        min-height: 23rem;
+        max-height: 23rem;
+        max-width: 80vw;
+    }
+
+    #imagem {
+        border-radius: 0 .7rem .7rem 0;
+        height: 23rem;
+        width: 25rem;
+    }
+
+    #formulario {
+        padding: 1.2rem;
+    }
+
+    #formulario p {
+        margin-bottom: 1.2rem;
+    }
+    
+    .campo > label {
+        width: 10%;
+    }
+
+    .campo > input {
+        width: 90%;
+    }
+
+    #entrar {
+        margin-top: .2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #login {
+        max-width: 80vw;
+    }
+
+    #imagem {
+        width: 35rem;
+    }
+
+    #formulario {
+        padding: 1.5rem;
+    }
+
+    #formulario p {
+        margin-bottom: 1.5rem;
+    }
+
+    #entrar {
+        margin-top: .8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #login {
+        flex-direction: row;
+        max-height: 25rem;
+        min-height: 25rem;
+    }
+
+    #imagem {
+        border-radius: .7rem 0 0 .7rem;
+    }
+
+    #formulario {
+        padding: 2rem;
+    }
+
+    #formulario h1 {
+        font-size: 2em;        
+        margin-top: -.4rem;
+    }
+
+    #formulario p {
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+    }
+
+    #entrar, #esqueci    {
+        font-size: 1.1em;
+    }
+}

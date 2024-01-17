@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* background: linear-gradient(0deg, rgb(248, 199, 94) 0%, rgb(105, 170, 255) 50%) no-repeat; */
+
+:root {
+    --cor-azul: rgb(105, 170, 255);
+    --cor-laranja: rgb(248, 199, 94);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: rgb(185, 215, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    background-color: #fff;
+    border-radius: .7rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    max-width: 19rem;
+    min-height: 36rem;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+#imagem {
+    background: rgb(248, 199, 94) url('../images/pexels-adrian-cuj-2457096.jpg') center / cover no-repeat;
+    border-radius: .7rem .7rem 0 0;
+    display: block;
+    height: 15rem;
+    width: 100%;
+}
+
+#formulario {
+    display: block;
+    padding: 1rem;
+}
+
+#formulario h1 {
+    margin: .6rem;
+    text-align: center;
+}
+
+#formulario p {
+    margin: .8rem 0;
+}
+
+.campo {
+    background-color: var(--cor-azul);
+    border: 2px solid var(--cor-azul);
+    border-radius: .3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: .4rem;
+    width: 100%;
+}
+
+.campo > input {
+    border: none;
+    border-radius: .3rem;
+    width: 85%;
+    padding: .7rem;
+}
+
+.campo > label {
+    text-align: center;
+    width: 15%;
+}
+
+
+.campo > label > span {
+    color: #fff;
+    padding: 0 .4rem;
+}
+
+#entrar {
+    background-color:rgb(240, 191, 87);
+    border: none;
+    border-radius: .3rem;
+    color: #ffffff;
+    font-size: 1em;
+    margin-bottom: .4rem;
+    padding: .7rem;
+    width: 100%;
+}
+
+
+#entrar:hover {
+    background-color: rgb(201, 161, 77);
+    cursor: pointer;
+}
+
+#esqueci {
+    border: 2px solid var(--cor-laranja);
+    border-radius: .3rem;
+    color: rgb(138, 111, 53);
+    display: block;
+    font-size: 1em;
+    margin-bottom: .5rem;
+    padding: .6rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+#esqueci:hover {
+    text-decoration: underline;
+}
+
+#esqueci span {
+    font-size: .9rem;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem"></div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="iusuario">
+                            <span class="material-icons">
+                                person
+                            </span>
+                        </label>
+                        <input type="email" name="usuario" id="iusuario" placeholder="Seu e-mail" autocomplete="email" required maxlength="50">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha">
+                            <span class="material-icons">
+                                key
+                            </span>
+                        </label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="30">
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar" id="entrar">
+                        <a href="esqueci.html" target="_blank" id="esqueci">Esqueci a senha  <span class="material-icons">
+                            email
+                        </span></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
